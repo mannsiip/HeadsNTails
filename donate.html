@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATE</title>
+    <link rel="stylesheet" href="donate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div><img class="logo" src="glow.png"></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="donate.html" class="contact-btn">Donate</a>
+        <div class="dropdown">
+          <button class="btn"><i class="material-symbols-outlined" onclick="toggleDropdown()">menu</i></button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>MAKE A CHARITABLE DONATION</h1>
+            <p>We endeavor to keep our rescues out of kill shelters and give them an opportunity to find new families.All donations and fees go toward caring for rescues and their expenses.</p>
+            <a href="#change" class="start-btn">DONATE NOW!</a>
+        </div>
+        <div class="hero-image-placeholder">
+            <picture>
+             <source media="(max-width: 800px)" srcset="small.png">
+             <source media="(max-width: 1024px)" srcset="medium.png">
+             <img src="collage.png" alt="Description" style="border-radius: 20px">
+             </picture>
+            <img src="collage.png" style="border-radius: 20px;display: none;">
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <h3>62M</h3>
+            <p>stray dogs</p>
+        </div>
+        <div class="stat-item">
+            <h3>9.1M</h3>
+            <p>stray cats</p>
+        </div>
+        <div class="stat-item">
+            <h3>8.8M</h3>
+            <p> other strays </p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+  <section class="how-much">
+    <h2 style="margin-bottom: 5%;margin-top: 7%;">HELP A RESCUE IN NEED</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>500 INR</h3>
+        <p class="space">Pays for meals for the rescues.</p>
+      </div>
+      <div class="vl"></div>
+      <div class="step">
+        <h3>1000 INR</h3>
+        <p class="space">Pays for essential vaccinations.</p>
+      </div>
+      <div class="vl"></div>
+      <div class="step" style="height: 122px;">
+        <h3>2000 INR</h3>
+        <p class="space">Pays for a neuter/spay.</p>
+      </div>
+      <div class="vl"></div>
+      <div class="step" style="margin-bottom: 11%;">
+        <h3>10000 INR</h3>
+        <p class="space">Pays for surgery for an injured rescue to be saved!</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- What Our Pets Look Like Section -->
+    <section class="pets-section" id="change"> 
+        <div class="pets-grid">
+            <div class="pet-card">
+                <h3>DONATIONS IN INDIAN RUPEES</h3>
+                <div class="placeholder">CLICK TO DONATE ONLINE (UPI)</div>
+                <p class="info-title">BY BANK TRANSFER (RTGS/NEFT/IMPS)</p>
+                <div class="info">BANK NAME<br> Account no:  111111111<br> Branch:  Area, City 000000, India<br> IFSC Code:  ABCD67890<br><br>BANK NAME<br> Account no:  00000000000<br> Branch:  Area, City 111111, India<br> IFSC Code:  ABCD12345</div>
+                <p class="info-title">BY CHEQUE</p>
+                <div class="info">Drawn On<br>Blue Cross of India<br><br>Mail/Courier to Our Registered Office :<br>1 A Eldams Road, Alwarpet, Chennai 600018,  Tamil Nadu, India.</div>
+            </div>
+            <div class="pet-card">
+                <h3>DONATIONS IN OTHER CURRENCY</h3>
+                <div class="placeholder">CLICK TO DONATE ONLINE (PAYPAL)</div>
+                <p>BY BANK TRANSFER (FCRA a/c)</p>
+                <div class="info">STATE BANK OF INDIA<br>Beneficiary Name:  Blue Cross Of India<br>FCRA Account no:  39853103064<br>Branch:  11 Sansad Marg, New Delhi 110001, India<br>SWIFT Code:  SBININBB104<br>IFSC Code:  SBIN0000691  (SBIN zero zero zero zero 691)</div>
+                <p class="info-title">BY CHEQUE</p>
+                <div class="info">Drawn On<br>Blue Cross of India<br><br>Mail/Courier to Our Registered Office :<br>1 A Eldams Road, Alwarpet, Chennai 600018,  Tamil Nadu, India.</div>
+            </div>
+            <div class="pet-card">
+                <h3>BUY US THINGS WE NEED</h3>
+                <a href="https://www.amazon.in/"><div class="placeholder" style="margin-bottom: 5%;">CLICK TO BUY US THINGS FROM OUR<br> CURRENT AMAZON WISHLIST</div></a>
+                <h3>BUY US PRODUCE WE NEED</h3>
+                <div class="info">Rice, Pulses (Dal), Soyabeans, Wheat, Dry Peas, Corn(Maize), Potato Powder, Carrot Powder, Maize Gluten, Bird Feed</div>
+            </div>
+            <div class="pet-card">
+                <h3>DONATE (USED) STUFF</h3>
+                <div class="placeholder" ><a href=mailto:“headsntails@gmail.com” style="text-decoration: none;color: black;">CLICK TO EMAIL US WHAT ITEMS YOU WISH<br> TO DONATE(DROP OFF/WE CAN COLLECT)</a></div>
+                <p>TYPICAL USED STUFF WE NEED</p>
+                <div class="info">- Old Newspapers as litter soakers<br>- Used Towels, Bedsheets, Tarpaulin</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>WHY DONATE?</h2>
+        <div class="faq-img"><img src="q2.png" width="180" height="180"></div>
+        <div class="faq-item">
+            <p>Your donations directly affect the number of strays we are able to rescue, treat, and shelter. Help SAFI make a difference in the lives of India’s animals.<br><br> We believe in complete transparency regarding the use of funds.Every rupee you contribute goes directly towards the care and well-being of the animals at our sanctuary.<br><br><b>Donations are covered under 80G of Income Tax</b></p>
+        </div>
+
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="contact-section">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/VjnHW07wZn4?si=NsmYLDEV5xtOgsyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div><img class="logo" src="footer.png"></div>
+        
+        <div class="deets">
+            <button class="button"><a href="https://maps.app.goo.gl/fuzsBwp8MDdrw9Y1A" target="_blank"><i class="material-icons">location_on</i></a></button>
+            <button class="button"><a href="headsntails@gmail.com" target="_blank"><i class="material-icons">mail</i></a></button>
+            <button class="button"><i class="material-icons">call</i></button>
+            <button class="button"><a href="#"><i class="material-icons">arrow_upward</i></a></button>
+        </div>
+     
+        
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-symbols-outlined')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

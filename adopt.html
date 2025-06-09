@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADOPT</title>
+  <link rel="stylesheet" href="adopt.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<nav>
+   <div><img class="logo" src="glow.png"></div>
+   <div class="nav-links">
+       <a href="index.html">Home</a>
+       <a href="adopt.html">Adopt</a>
+       <a href="volunteer.html">Volunteer</a>
+       <a href="contact.html">Contact</a>
+   </div>
+   <a href="donate.html" class="contact-btn">Donate</a>
+   <div class="dropdown">
+      <button class="btn"><i class="material-symbols-outlined" onclick="toggleDropdown()">menu</i></button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="index.html">Home</a>
+        <a href="adopt.html">Adopt</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </div>
+   </div>
+</nav>
+
+<!--body-->
+<div style="background-color: #fff6ee;">
+<section class="container">
+  <div class="grid">
+    <div class="placeholder-text">
+        <h2>ACTIVE ADOPTION</h2>
+        <p>Give an abandoned animal their <strong>#foreverhome</strong>. Visit our Heads N Tails Center to spend time with our rescues.</p>
+        <br>
+        <p>Before you adopt, read:</p>
+        <ul>
+          <li><a href="faq.html#a">Are You Ready To Adopt a Pet?</a></li>
+          <li><a href="faq.html#b">What is the animal adoption process?</a></li>
+          <li><a href="faq.html#c">Things To Know Before Adopting a Rescue</a></li>
+        </ul>
+        <a href="active.html"><button><strong>Adopt</strong></button></a>
+    </div>
+
+    <div class="placeholder-img" style="margin-left: 2em;">
+      <picture>
+        <source media="(max-width: 800px)" srcset="kukka2.png">
+        <img src="kukka.png" alt="Description" style="border-radius: 20px">
+      </picture>
+      <img src="kukka.png" alt="Dog" style="display: none;"/>
+    </div>
+
+    <div class="placeholder-img">
+      <picture>
+        <source media="(max-width: 800px)" srcset="pilli2.png">
+        <img src="pilli.png" alt="Description" style="border-radius: 20px">
+      </picture>
+      <img src="pilli.png" alt="Dog" style="display: none;"/>
+    </div>
+
+    <div class="placeholder-text" style="margin-top: 3em;" id="ali">
+        <h2>PASSIVE ADOPTION</h2>
+        <p>Always wanted to adopt a pet but unable to do so because of family, space or time constraints? With CUPA, you can passively adopt one of our rescues – a dog, cat, horse, cow, goat or any rescue you bond with – for as little as Rs. 900 per month. Sponsor food & medical care while they reside at our shelter. You can still visit them as you like!</p>
+        <a href="passive.html"><button style="width: fit-content;padding: 5px;"><strong>Adopt passively</strong></button></a>
+    </div>
+
+  </div><br><br><br><br>
+
+  </div>
+
+</section></div>
+
+
+
+
+    <footer>
+        <div><img class="logo" src="footer.png"></div>
+        
+        <div class="deets">
+            <button class="button"><a href="https://maps.app.goo.gl/fuzsBwp8MDdrw9Y1A" target="_blank"><i class="material-icons">location_on</i></a></button>
+            <button class="button"><a href="headsntails@gmail.com" target="_blank"><i class="material-icons">mail</i></a></button>
+            <button class="button"><i class="material-icons">call</i></button>
+            <button class="button"><a href="#"><i class="material-icons">arrow_upward</i></a></button>
+        </div>
+     
+        
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-symbols-outlined')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</body>
+</html>
