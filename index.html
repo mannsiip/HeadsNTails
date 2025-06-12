@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADS N TAILS</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav>
+        <div><img class="logo" src="glow.png"></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="donate.html" class="contact-btn">Donate</a>
+        <div class="dropdown">
+          <button class="btn"><i class="material-symbols-outlined" onclick="toggleDropdown()">menu</i></button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1 style="font-family: Shippori Antique B1, sans-serif;text-align: start;">HEADS N TAILS ANIMAL SHELTER</h1>
+            <p>Heads N Tails, an NGO, was founded in 2020 and it has been providing relief and finding homes to sick, injured and abused animals ever since.</p>
+            
+        </div>
+        <div class="hero-image-placeholder">
+            <picture>
+             <source media="(max-width: 800px)" srcset="small.png">
+             <source media="(max-width: 1024px)" srcset="medium.png">
+             <img src="collage.png" alt="Description" style="border-radius: 20px">
+             </picture>
+            <img src="collage.png" style="border-radius: 20px;display: none;">
+        </div>
+    </section>
+
+<!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <h3>8,000</h3>
+            <p>animals saved</p>
+        </div>
+        <div class="stat-item">
+            <h3>3,000</h3>
+            <p>animals adopted</p>
+        </div>
+        <div class="stat-item">
+            <h3>240</h3>
+            <p>volunteers </p>
+        </div>
+    </section>
+
+<!-- How It Works Section -->
+  <section class="how-much">
+    <h2 >What We Do</h2>
+    <div class="steps">
+      <div class="step">
+        <p class="lenk">Adoption</p>
+        <a href="adopt.html" class="lonk"><p >Learn More</p></a>
+      </div>
+      <div class="vl"></div>
+      <div class="step">
+        <p class="lenk">Trauma Care For Street Animals</p>
+      </div>
+      <div class="vl"></div>
+      <div class="step" style="height: 122px;">
+        <p class="lenk">Humane Education</p>
+      </div>
+      <div class="vl"></div>
+      <div class="step" >
+        <p class="lenk">Passive Adoption</p>
+        <a href="adopt.html" class="lonk"><p >Learn More</p></a>
+      </div>
+    </div>
+  </section>
+
+
+<!---oppur-->
+    <section class="bg">
+    <div class="opportunities">
+        <h2>How Can You Help</h2>
+        <div class="grid">
+            <div class="placeholder">
+                <button class="dabba"><a href="donate.html"><i class="material-icons">currency_rupee</i></a></button>
+                <p><strong>Donate </strong></p>
+            </div>
+            <div class="placeholder">
+                <button class="dabba"><a href="adopt.html"><i class="material-icons">favorite</i></a></button>
+                <p><strong>Adopt</strong></p>
+            </div>
+            <div class="placeholder">
+                <button class="dabba"><a href="volunteer.html"><i class="material-icons">volunteer_activism</i></a></button>
+                <p><strong>Volunteer</strong></p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+<!--Subscribe-->
+
+    <section class="subscribe">
+        <form name="myForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()" >
+        <input type="hidden" name="access_key" value="7e95a6ab-4467-4fa2-beb8-10d13b382195">
+        <div>
+          <h2>STAY UPDATED</h2>
+          <input type="email" placeholder="Enter Your Email" name="email" id="email" >
+          <button>Subscribe</button>
+          
+        </div>
+        </form>
+    </section>
+
+
+<!-- Footer -->
+    <footer>
+        <div><img class="logo" src="footer.png"></div>
+        
+        <div class="deets">
+            <button class="button"><a href="https://maps.app.goo.gl/fuzsBwp8MDdrw9Y1A" target="_blank"><i class="material-icons">location_on</i></a></button>
+            <button class="button"><a href="headsntails@gmail.com" target="_blank"><i class="material-icons">mail</i></a></button>
+            <button class="button"><i class="material-icons">call</i></button>
+            <button class="button"><a href="#"><i class="material-icons">arrow_upward</i></a></button>
+        </div>
+     
+        
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-symbols-outlined')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function validateForm() {
+          let x = document.forms["myForm"]["email"].value;
+          if (x == "") {
+            alert("Email must be filled out");
+            return false;
+          }
+        }
+    </script>
+</body>
+</html>
