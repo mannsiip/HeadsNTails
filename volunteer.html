@@ -74,7 +74,7 @@
     <section class="form">
         <h2>Volunteer Application</h2>
         <p>Ready to join our team? Fill out the form below, and we'll get in touch with you!</p>
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" name="myForm" onsubmit="return validateForm()">
             <input type="hidden" name="access_key" value="7e95a6ab-4467-4fa2-beb8-10d13b382195">
             <div class="form-group">
             <label for="fname">First Name:</label>
@@ -162,6 +162,39 @@
                     }
                 }
             }
+        }
+
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("First Name must be filled out");
+            return false;
+          }
+          let x = document.forms["myForm"]["lname"].value;
+          if (x == "") {
+            alert("Last Name must be filled out");
+            return false;
+          }
+          let x = document.forms["myForm"]["mail"].value;
+          if (x == "") {
+            alert("Mail must be filled out");
+            return false;
+          }
+          let x = document.forms["myForm"]["phone"].value;
+          if (x == "") {
+            alert("Phone No. must be filled out");
+            return false;
+          }
+          let x = document.forms["myForm"]["avail"].value;
+          if (x == "") {
+            alert("This field must be filled out");
+            return false;
+          }
+          let x = document.forms["myForm"]["message"].value;
+          if (x == "") {
+            alert("This field must be filled out");
+            return false;
+          }
         }
     </script>
 </body>
