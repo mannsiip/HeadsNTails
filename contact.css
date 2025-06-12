@@ -194,43 +194,28 @@ nav {
   margin-bottom: 5px;
   text-align: left;
   color: #262628;
+  padding-left: 1.5em;
 }
 
 .placeholder-map iframe {
     border-radius: 10px ;
 }
 
-.fa {
-  padding: 17px;
-  size: 60px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2em 2.5em;
-  border-radius: 15px;
-}
 
-.fa:hover {
-    opacity: 0.7;
-}
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  size: 3em;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 /*sm*/
+.sm{
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.sm p{
+  font-family: Shippori Antique B1, sans-serif;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
 
 .cont {
   max-width: 650px;
@@ -239,6 +224,19 @@ nav {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   gap: 25px;
+}
+
+.portfolio {
+  background-color: #ffcc00;
+  border-radius: 10px;
+  width: 5em;
+  height: 5em;
+  border: 4px solid #fee789;
+}
+
+.portfolio:hover{
+  background-color: #fee789;
+  border: 4px solid #ffcc00;
 }
 
 
@@ -320,9 +318,6 @@ footer {
   grid-template-columns: 100%;
 
 }
-.placeholder-map iframe {
-  width:"380";
-  height:"200"
 
 }
 
