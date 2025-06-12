@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLUNTEER</title>
+    <link rel="stylesheet" href="volunteer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div><img class="logo" src="glow.png"></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="donate.html" class="contact-btn">Donate</a>
+        <div class="dropdown">
+          <button class="btn"><i class="material-symbols-outlined" onclick="toggleDropdown()">menu</i></button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+    </nav>
+
+<!--BODY-->
+
+    <div class="container">
+        <div class="section">
+            <h2>VOLUNTEER WITH HEADS N TAILS</h2>
+            <p>Volunteering at Heads n Tails is a rewarding way to make a difference in the lives of animals. Whether you’re passionate about animal welfare, community outreach, or simply want to lend a helping hand, we have opportunities for everyone.</p>
+        </div>
+
+
+<!---oppur-->
+
+        <div class="opportunities">
+            <h2>Volunteer Opportunities</h2>
+            <div class="grid">
+              <div class="placeholder"><p><strong>Animal Care :</strong> Assist with feeding, grooming, and caring for animals at our shelters.</p></div>
+              <div class="placeholder"><p><strong>Adoption Events :</strong> Help organize and manage adoption drives to find loving homes for our animals.</p></div>
+              <div class="placeholder"><p><strong>Fundraising :</strong> Support our mission by helping with fundraising campaigns and events.</p></div>
+              <div class="placeholder"><p><strong>Community Outreach :</strong> Educate the public about animal welfare and responsible pet ownership.</p></div>
+              <div class="placeholder"><p><strong>Administrative Support :</strong> Assist with office tasks, data entry, and event coordination.</p></div>
+              <div class="placeholder"><p><strong>Veterinary Assistance :</strong> Support our veterinary team with basic animal health care tasks (training provided).</p></div>
+            </div>
+        </div>
+    </div>
+
+
+<!---why volunteer-->
+
+    <section class="why">
+        <h2>WHY VOLUNTEER?</h2>
+        <div class="grid">
+        <div class="why-img"><img src="q.png"></div>
+        <div class="why-item">
+            <p>Make a direct impact on the lives of animals in need.<br><br>Join a community of like-minded individuals passionate about animal welfare.<br><br>Gain valuable skills and experience in animal care, event management, and more.<br><br>Contribute to a legacy of compassion and care since 1964.</p>
+        </div>
+        </div>
+    </section>
+
+
+<!---apply-->
+
+    <section class="form">
+        <h2>Volunteer Application</h2>
+        <p>Ready to join our team? Fill out the form below, and we'll get in touch with you!</p>
+        <form action="https://api.web3forms.com/submit" method="POST" name="myForm" onsubmit="return validateForm()">
+            <input type="hidden" name="access_key" value="7e95a6ab-4467-4fa2-beb8-10d13b382195">
+            <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            </div>
+
+            <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            </div>
+
+            <div class="form-group">
+            <label for="mail">Email Address:</label>
+            <input type="email" id="mail" name="mail">
+            </div>
+
+            <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+            <label for="interest">Area of interest:</label>
+            <select id="interest" name="interest" required>
+                <option value="animal-care">Animal Care</option>
+                <option value="adoption-events">Adoption Events</option>
+                <option value="fundraising">Fundraising</option>
+                <option value="community-outreach">Community Outreach</option>
+                <option value="administrative-support">Administrative Support</option>
+                <option value="veterinary-assistance">Veterinary Assistance</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+            <label for="avail">Availibility:</label>
+            <textarea id="availability" name="availability" rows="4" placeholder="E.g., Weekends, Weekdays after 5 PM, etc." ></textarea>
+            </div>
+
+            <div class="form-group">
+            <label for="message">Why do you want to volunteer with Heads N Tails?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your passion for animal welfare!"></textarea>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+
+<!---footer-->
+
+    <footer>
+        <div><img class="logo" src="footer.png"></div>
+        
+        <div class="deets">
+            <button class="button"><a href="https://maps.app.goo.gl/fuzsBwp8MDdrw9Y1A" target="_blank"><i class="material-icons">location_on</i></a></button>
+            <button class="button"><a href="headsntails@gmail.com" target="_blank"><i class="material-icons">mail</i></a></button>
+            <button class="button"><i class="material-icons">call</i></button>
+            <button class="button"><a href="#"><i class="material-icons">arrow_upward</i></a></button>
+        </div>
+     
+        
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-symbols-outlined')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        function validateForm() {
+          let a = document.forms["myForm"]["fname"].value;
+          if (a == "") {
+            alert("First Name must be filled out");
+            return false;
+          }
+          let b = document.forms["myForm"]["lname"].value;
+          if (b == "") {
+            alert("Last Name must be filled out");
+            return false;
+          }
+          let c = document.forms["myForm"]["mail"].value;
+          if (c == "") {
+            alert("Mail must be filled out");
+            return false;
+          }
+          let d = document.forms["myForm"]["phone"].value;
+          if (d == "") {
+            alert("Phone No. must be filled out");
+            return false;
+          }
+          let e = document.forms["myForm"]["avail"].value;
+          if (e == "") {
+            alert("This field must be filled out");
+            return false;
+          }
+          let f = document.forms["myForm"]["message"].value;
+          if (f == "") {
+            alert("This field must be filled out");
+            return false;
+          }
+        }
+    </script>
+</body>
+</html>
+
+    
