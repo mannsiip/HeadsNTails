@@ -320,7 +320,9 @@ footer {
   grid-template-columns: 100%;
 
 }
-
+.placeholder-map iframe {
+  width:"380";
+  height:"200"
 
 }
 
