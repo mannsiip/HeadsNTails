@@ -189,7 +189,6 @@ nav {
   background-color: #5ba3f8;
   color: #fff;
   text-align: center;
-  height: 400px;
 }
 
 .why h2 {
@@ -200,7 +199,6 @@ nav {
 .why-item {
   margin-bottom: 20px;
   width: 50%;
-  float: right;
 }
 
 .why-item p {
