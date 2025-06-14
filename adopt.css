@@ -179,23 +179,6 @@ nav {
   margin-top: 9px;
 }
 
-.placeholder-img {
-  width: 100%;
-  margin-bottom: 5px;
-  color: #262628;
-  height: auto;
-  margin-top: 3em;
-}
-
-.placeholder-img img {
-  object-fit: contain;
-  border-radius: 10px;
-  max-width: 400px;
-}
-
- #ali{
-    padding-left:2em;
- }
 
 
 /*footer*/
@@ -292,6 +275,5 @@ footer {
 
   #ali{
     margin-left: 2em;
-    border-radius:10px;
   }
 }
