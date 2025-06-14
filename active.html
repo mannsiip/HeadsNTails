@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACTIVE ADOPTION</title>
+  <link rel="stylesheet" href="active.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header>
+    <nav>
+   <div><img class="logo" src="glow.png"></div>
+   <div class="nav-links">
+       <a href="index.html">Home</a>
+       <a href="adopt.html">Adopt</a>
+       <a href="volunteer.html">Volunteer</a>
+       <a href="contact.html">Contact</a>
+   </div>
+   <a href="donate.html" class="contact-btn">Donate</a>
+   <div class="dropdown">
+      <button class="btn"><i class="material-symbols-outlined" onclick="toggleDropdown()">menu</i></button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="index.html">Home</a>
+        <a href="adopt.html">Adopt</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </div>
+   </div>
+</nav>
+  </header>
+
+  <section class="dog-gallery">
+    <img src="pet\gulabi.png" alt="Dog 1" />
+    <img src="pet\maggie.png" alt="Dog 2" />
+    <img src="pet\smiley.png" alt="Dog 3" />
+    <img src="pet\oscar.png" alt="Dog 4" />
+  </section>
+
+  <div class="cot">
+    <p><strong> Second Chance Adoption Centre</strong> is a shelter to rescue & rehabilitate pets who have been abandoned or abused by their owners or discarded by breeders.</p>
+      <p>Total no. of Dogs Adopted: <span style="background-color: #5ba3f8;font-size: 20px;">3000</span></p>
+  </div>
+
+  <section class="content">
+    <div class="info" ><p><strong> Want to Help?</strong><BR>You too can grant the gift of a second chance to these wonderful souls who deserve a better life. To adopt a pet, fill out the form below. Or if you just want to contribute to our centre, consider making a donation. You are also welcome to pay us a visit during our open hours.<br><br><a href="donate.html" class="contact-btn">Donate</a></p></div>
+
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+        <div class="contact-item">
+          <span class="icon">✔️</span>
+          <strong>Timings:</strong> 11 am - 3 pm, Monday - Sunday
+        </div>
+        <div class="contact-item">
+          <span class="icon">✔️</span>
+          <strong>Email:</strong> adoptioncentre@cupaindia.org
+        </div>
+        <div class="contact-item">
+          <span class="icon">✔️</span>
+            <strong>Note:</strong> If you would like to visit the centre, please send an email one day prior mentioning the time and purpose of the visit.
+        </div>
+    </div>
+</section>
+
+  <section class="form-section">
+    <p>All of the dogs at the HEADS & TAILS Second Chance Adoption Center have been rescued from accidents, abuse, and negligence. It is very important to note that adopting a dog is a long-term commitment depending on the age of the dog. Many dogs are abandoned and given up due to relocation of the family, promotions in jobs, changes in family structures (expecting a baby, marriage, senior parents coming to stay with the family), and allergies. Kindly please ensure that you and your family have extensively talked through and agreed on the decision to adopt before making a decision.</p><br>
+    <a href="Adoption-Form.pdf" target="_blank" download="Adoption-Form" >Download the Adoption Form</a>
+    <br>
+    <form name="myForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+    <input type="hidden" name="access_key" value="7e95a6ab-4467-4fa2-beb8-10d13b382195">
+    <label>Upload Scanned Form:
+      <input type="file" name="file" id="file"/>
+    </label><br>
+    <label>
+      <input type="checkbox" name="checkbox" id="checkbox"/>I have read and agree with the above
+    </label><br>
+    <button type="submit"><strong>Submit</strong></button>
+    </form>
+  </section>
+
+<!---footer-->
+
+    <footer>
+        <div><img class="logo" src="footer.png"></div>
+        
+        <div class="deets">
+            <button class="button"><a href="https://maps.app.goo.gl/fuzsBwp8MDdrw9Y1A" target="_blank"><i class="material-icons">location_on</i></a></button>
+            <button class="button"><a href="headsntails@gmail.com" target="_blank"><i class="material-icons">mail</i></a></button>
+            <button class="button"><i class="material-icons">call</i></button>
+            <button class="button"><a href="#"><i class="material-icons">arrow_upward</i></a></button>
+        </div>
+     
+        
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-symbols-outlined')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function validateForm() {
+          let x = document.forms["myForm"]["file"].value;
+          if (x == "") {
+            alert("File must be selected");
+            return false;
+          }
+          let y = document.forms["myForm"]["checkbox"].checked;
+          if (y == "") {
+            alert("Checkbox must be selected");
+            return false;
+          }
+        }
+    </script>
+
+</body>
+</html>
